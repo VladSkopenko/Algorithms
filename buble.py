@@ -8,6 +8,15 @@ print(lst)
 
 @timer
 def bubble_sort(arr):
+    """
+    O(n) ** 2 найгірша
+    O(n) найкраща
+    Для масива
+    Стабильно
+    Учбовий алгоритм
+    :param arr: list
+    :return: list
+    """
     long_arr = len(arr)
     for index in range(long_arr - 1):
         current_element = arr[index]
