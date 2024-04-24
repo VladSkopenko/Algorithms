@@ -3,7 +3,7 @@ from functools import wraps
 import logging
 
 
-logging.basicConfig(filename='app.log', level=logging.INFO, encoding="utf-8")
+logging.basicConfig(filename='logs/app.log', level=logging.INFO, encoding="utf-8")
 logger = logging.getLogger()
 
 
@@ -14,7 +14,7 @@ def timer(func):
         result = func(*args, **kwargs)
         end_time = time.time()
         execution_time = end_time - start_time
-        logger.info(f"Функція {func.__name__} виконана  для списку з {len(args[0])} елементі  за {execution_time:.6f} секунд")
+        logger.info(f"Функція {func.__name__} виконується  для списку з {len(args[0])} елементі  за {execution_time:.6f} секунд")
         return result
 
     return wrapper

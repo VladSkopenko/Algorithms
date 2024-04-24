@@ -2,7 +2,7 @@ import random
 
 from time_decor import timer
 
-lst = [random.randint(1, 10) for i in range(12000)]
+lst = [random.randint(1, 10) for i in range(10)]
 
 
 @timer
