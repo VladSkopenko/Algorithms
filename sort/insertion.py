@@ -6,9 +6,9 @@ lst = [random.randint(1, 10) for i in range(5000)]
 
 
 @timer
-def insert_sort(arr):
+def insert_sort(arr, start_index=1):
     length_of_list = len(arr)
-    for start in range(1, length_of_list):
+    for start in range(start_index, length_of_list):
         for index in range(start, 0, -1):
             if arr[index] < arr[index - 1]:
                 arr[index - 1], arr[index] = arr[index], arr[index - 1]
