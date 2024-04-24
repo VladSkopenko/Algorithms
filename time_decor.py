@@ -14,7 +14,7 @@ def timer(func):
         result = func(*args, **kwargs)
         end_time = time.time()
         execution_time = end_time - start_time
-        logger.info(f"Функция {func.__name__} выполнена для списка из {len(args[0])} элементов за за {execution_time:.6f} секунд")
+        logger.info(f"Функція {func.__name__} виконана  для списку з {len(args[0])} елементі  за {execution_time:.6f} секунд")
         return result
 
     return wrapper
