@@ -10,11 +10,12 @@ logger = logging.getLogger()
 def timer(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
+        k = (len(args[0]))
         start_time = time.time()
         result = func(*args, **kwargs)
         end_time = time.time()
         execution_time = end_time - start_time
-        logger.info(f"Функція {func.__name__} виконується  для списку з {len(args[0])} елементів  за {execution_time:.6f} секунд")
+        logger.info(f"Функція {func.__name__} виконується  для списку з {k} елементів  за {execution_time:.6f} секунд")
         return result
 
     return wrapper

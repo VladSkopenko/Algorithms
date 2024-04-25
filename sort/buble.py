@@ -2,7 +2,7 @@ import random
 
 from time_decor import timer
 
-lst = [random.randint(1, 10) for i in range(50000)]
+lst = [random.randint(1, 10) for i in range(5000)]
 
 
 @timer
@@ -10,7 +10,7 @@ def bubble_sort(arr):
     """
     O(n) ** 2 найгірша
     O(n) найкраща
-    Для масива
+    Для масива, списка
     Стабільний, однакові елементи зберігають свої позиції відносно один одного
     Учбовий алгоритм
     :param arr: list
