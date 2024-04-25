@@ -17,11 +17,11 @@ def find_smallest(arr):
 
 @timer
 def selection_sort(arr):
-    newarr = []
+    new_arr = []
     for i in range(len(arr)):
-        smallest = find_smallest(arr)
-        newarr.append(arr.pop(smallest))
-    return newarr
+        smallest = arr.index(min(arr))
+        new_arr.append(arr.pop(smallest))
+    return new_arr
 
 
 if __name__ == "__main__":
