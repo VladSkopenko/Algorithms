@@ -1,0 +1,186 @@
+[
+    {
+        "label": "timer",
+        "importPath": "time_decor",
+        "description": "time_decor",
+        "isExtraImport": true,
+        "detail": "time_decor",
+        "documentation": {}
+    },
+    {
+        "label": "timer",
+        "importPath": "time_decor",
+        "description": "time_decor",
+        "isExtraImport": true,
+        "detail": "time_decor",
+        "documentation": {}
+    },
+    {
+        "label": "timer",
+        "importPath": "time_decor",
+        "description": "time_decor",
+        "isExtraImport": true,
+        "detail": "time_decor",
+        "documentation": {}
+    },
+    {
+        "label": "timer",
+        "importPath": "time_decor",
+        "description": "time_decor",
+        "isExtraImport": true,
+        "detail": "time_decor",
+        "documentation": {}
+    },
+    {
+        "label": "timeit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "timeit",
+        "description": "timeit",
+        "detail": "timeit",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "wraps",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "binary_search",
+        "kind": 2,
+        "importPath": "searc.binary",
+        "description": "searc.binary",
+        "peekOfCode": "def binary_search(sort_list: list, item) -> int | None:\n    low = 0\n    high = len(sort_list) - 1\n    while low <= high:\n        mid = (low + high) // 2\n        guess = sort_list[mid]\n        if guess == item:\n            return mid\n        if guess >= item:\n            high = mid - 1",
+        "detail": "searc.binary",
+        "documentation": {}
+    },
+    {
+        "label": "bubble_sort",
+        "kind": 2,
+        "importPath": "sort.buble",
+        "description": "sort.buble",
+        "peekOfCode": "def bubble_sort(arr):\n    \"\"\"\n    O(n) ** 2 найгірша\n    O(n) найкраща\n    Для масива, списка\n    Стабільний, однакові елементи зберігають свої позиції відносно один одного\n    Учбовий алгоритм\n    :param arr: list\n    :return: list\n    \"\"\"",
+        "detail": "sort.buble",
+        "documentation": {}
+    },
+    {
+        "label": "lst",
+        "kind": 5,
+        "importPath": "sort.buble",
+        "description": "sort.buble",
+        "peekOfCode": "lst = [random.randint(1, 10) for i in range(5000)]\n@timer\ndef bubble_sort(arr):\n    \"\"\"\n    O(n) ** 2 найгірша\n    O(n) найкраща\n    Для масива, списка\n    Стабільний, однакові елементи зберігають свої позиції відносно один одного\n    Учбовий алгоритм\n    :param arr: list",
+        "detail": "sort.buble",
+        "documentation": {}
+    },
+    {
+        "label": "insert_sort",
+        "kind": 2,
+        "importPath": "sort.insertion",
+        "description": "sort.insertion",
+        "peekOfCode": "def insert_sort(arr, start_index=1):\n    length_of_list = len(arr)\n    for start in range(start_index, length_of_list):\n        for index in range(start, 0, -1):\n            if arr[index] < arr[index - 1]:\n                arr[index - 1], arr[index] = arr[index], arr[index - 1]\n            else:\n                break\n    return print(arr)\nif __name__ == \"__main__\":",
+        "detail": "sort.insertion",
+        "documentation": {}
+    },
+    {
+        "label": "lst",
+        "kind": 5,
+        "importPath": "sort.insertion",
+        "description": "sort.insertion",
+        "peekOfCode": "lst = [random.randint(1, 10) for i in range(5000)]\n@timer\ndef insert_sort(arr, start_index=1):\n    length_of_list = len(arr)\n    for start in range(start_index, length_of_list):\n        for index in range(start, 0, -1):\n            if arr[index] < arr[index - 1]:\n                arr[index - 1], arr[index] = arr[index], arr[index - 1]\n            else:\n                break",
+        "detail": "sort.insertion",
+        "documentation": {}
+    },
+    {
+        "label": "find_smallest",
+        "kind": 2,
+        "importPath": "sort.selection",
+        "description": "sort.selection",
+        "peekOfCode": "def find_smallest(arr):\n    smallest = arr[0]\n    smallest_index = 0\n    for i in range(1, len(arr)):\n        if arr[i] < smallest:\n            smallest = arr[i]\n            smallest_index = i\n    return smallest_index\n@timer\ndef selection_sort_with_min(arr):",
+        "detail": "sort.selection",
+        "documentation": {}
+    },
+    {
+        "label": "selection_sort_with_min",
+        "kind": 2,
+        "importPath": "sort.selection",
+        "description": "sort.selection",
+        "peekOfCode": "def selection_sort_with_min(arr):\n    new_arr = []\n    for i in range(len(arr)):\n        smallest = arr.index(min(arr))\n        new_arr.append(arr.pop(smallest))\n    return new_arr\n@timer\ndef selection_sort(arr):\n    new_arr = []\n    for i in range(len(arr)):",
+        "detail": "sort.selection",
+        "documentation": {}
+    },
+    {
+        "label": "selection_sort",
+        "kind": 2,
+        "importPath": "sort.selection",
+        "description": "sort.selection",
+        "peekOfCode": "def selection_sort(arr):\n    new_arr = []\n    for i in range(len(arr)):\n        smallest = find_smallest(arr)\n        new_arr.append(arr.pop(smallest))\n    return new_arr\nif __name__ == \"__main__\":\n    selection_sort(lst)\n    selection_sort_with_min(lst_2)",
+        "detail": "sort.selection",
+        "documentation": {}
+    },
+    {
+        "label": "lst",
+        "kind": 5,
+        "importPath": "sort.selection",
+        "description": "sort.selection",
+        "peekOfCode": "lst = [random.randint(-5, 15) for i in range(15000)]\nlst_2 = [random.randint(-5, 15) for i in range(15000)]\ndef find_smallest(arr):\n    smallest = arr[0]\n    smallest_index = 0\n    for i in range(1, len(arr)):\n        if arr[i] < smallest:\n            smallest = arr[i]\n            smallest_index = i\n    return smallest_index",
+        "detail": "sort.selection",
+        "documentation": {}
+    },
+    {
+        "label": "lst_2",
+        "kind": 5,
+        "importPath": "sort.selection",
+        "description": "sort.selection",
+        "peekOfCode": "lst_2 = [random.randint(-5, 15) for i in range(15000)]\ndef find_smallest(arr):\n    smallest = arr[0]\n    smallest_index = 0\n    for i in range(1, len(arr)):\n        if arr[i] < smallest:\n            smallest = arr[i]\n            smallest_index = i\n    return smallest_index\n@timer",
+        "detail": "sort.selection",
+        "documentation": {}
+    },
+    {
+        "label": "timer",
+        "kind": 2,
+        "importPath": "time_decor",
+        "description": "time_decor",
+        "peekOfCode": "def timer(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        k = (len(args[0]))\n        start_time = time.time()\n        result = func(*args, **kwargs)\n        end_time = time.time()\n        execution_time = end_time - start_time\n        logger.info(f\"Функція {func.__name__} виконується  для списку з {k} елементів  за {execution_time:.6f} секунд\")\n        return result",
+        "detail": "time_decor",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "time_decor",
+        "description": "time_decor",
+        "peekOfCode": "logger = logging.getLogger()\ndef timer(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        k = (len(args[0]))\n        start_time = time.time()\n        result = func(*args, **kwargs)\n        end_time = time.time()\n        execution_time = end_time - start_time\n        logger.info(f\"Функція {func.__name__} виконується  для списку з {k} елементів  за {execution_time:.6f} секунд\")",
+        "detail": "time_decor",
+        "documentation": {}
+    }
+]

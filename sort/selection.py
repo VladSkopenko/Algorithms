@@ -2,8 +2,9 @@ import random
 
 from time_decor import timer
 
-lst = [random.randint(-5, 15) for i in range(15000)]
-lst_2 = [random.randint(-5, 15) for i in range(15000)]
+lst = [random.randint(-5, 15) for _ in range(15000)]
+lst_2 = [random.randint(-5, 15) for _ in range(15000)]
+
 
 def find_smallest(arr):
     smallest = arr[0]

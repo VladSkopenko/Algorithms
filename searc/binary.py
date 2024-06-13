@@ -1,6 +1,7 @@
 from time_decor import timer
 import timeit
 
+
 @timer
 def binary_search(sort_list: list, item) -> int | None:
     low = 0
