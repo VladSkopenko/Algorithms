@@ -53,4 +53,17 @@ class LinkedList:
         previous.next = current.next
         current = None
 
+    def print_list(self):
+        current = self.head
+        while current:
+            print(current.data, end="->")
+            current = current.next
+        print("")
 
+llist = LinkedList()
+llist.insert_at_beginning(4)
+llist.insert_at_beginning(41)
+llist.insert_at_end(5)
+
+
+llist.print_list()
