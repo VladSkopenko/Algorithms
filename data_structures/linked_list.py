@@ -37,3 +37,20 @@ class LinkedList:
                 return current
             current = current.next
         return None
+
+    def delete(self, data):
+        current = self.head
+        if current and current.data == data:
+            self.head = current.next
+            current = None
+            return
+        previous = None
+        while current and current.data != data:
+            previous = current
+            current = current.next
+        if current is None:
+            return
+        previous.next = current.next
+        current = None
+
+
