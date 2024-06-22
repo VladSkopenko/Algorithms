@@ -64,6 +64,7 @@ llist = LinkedList()
 llist.insert_at_beginning(4)
 llist.insert_at_beginning(41)
 llist.insert_at_end(5)
-
-
+print(llist.search(41).data)
 llist.print_list()
+"""Плюсом зв'язкових списків є можливість додавання елементів в  початок списку  О(1), в кінці списку О(n), пошук та видалення елементів О(n)"""
+
