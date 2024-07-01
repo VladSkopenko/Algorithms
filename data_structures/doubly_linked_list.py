@@ -32,5 +32,17 @@ class DoublyLinkedList:
         else:
             self.tail = new_node
 
+    def insert_before(self,next_node, data):
+        if not next_node:
+            return
+        new_node = Node(data)
+        new_node.prev = next_node.prev
+        next_node.prev = new_node
+        new_node.next = next_node
+        if new_node.prev:
+            new_node.prev.next = new_node
+        else:
+            self.head = new_node
+
 
 
