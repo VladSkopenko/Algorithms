@@ -44,5 +44,21 @@ class DoublyLinkedList:
         else:
             self.head = new_node
 
+    def search(self, target_data):
+        current = self.head
+        while current:
+            if current.data == target_data:
+                return current
+            current = current.next
+        return None
+
+    def search_from_tail(self, target_data):
+        current = self.tail
+        while current:
+            if current.data == target_data:
+                return current
+            current = current.prev
+        return None
+
 
 
