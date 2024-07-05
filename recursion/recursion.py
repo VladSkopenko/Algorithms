@@ -24,7 +24,7 @@ def fibonacci_memo(n: int, memo: dict = None) -> int:  # O(n)
 
 
 if __name__ == "__main__":
-    result = fibonacci(35)
-    result2 = fibonacci_memo(35)
+    result = fibonacci(499)
+    result2 = fibonacci_memo(499)
     print(result2)
     print(result)
