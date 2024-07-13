@@ -11,6 +11,7 @@ def koch_curve(t, order, size):
 
 
 def draw_koch_curve(order, size=300):
+    """Крива коха."""
     window = turtle.Screen()
     window.bgcolor("white")
 
@@ -26,5 +27,4 @@ def draw_koch_curve(order, size=300):
 
 
 if __name__ == '__main__':
-    # Виклик функції
     draw_koch_curve(5)
