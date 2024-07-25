@@ -6,17 +6,17 @@ lst = [random.randint(1, 10) for i in range(5000)]
 
 
 @timer
-def insert_sort(arr, start_index=1):
-    length_of_list = len(arr)
-    for start in range(start_index, length_of_list):
-        for index in range(start, 0, -1):
-            if arr[index] < arr[index - 1]:
-                arr[index - 1], arr[index] = arr[index], arr[index - 1]
-            else:
-                break
-
-    return print(arr)
+def insertion_sort(arr: list) -> list:
+    n = len(arr)
+    for i in range(1, n):
+        temp = arr[i]
+        j = i - 1
+        while j >= 0 and temp < arr[j]:
+            arr[j + 1] = arr[j]
+            j = j - 1
+        arr[j + 1] = temp
+    return arr
 
 
 if __name__ == "__main__":
-    insert_sort(lst)
+    insertion_sort(lst)
